@@ -8,3 +8,5 @@ meteor-platform
 insecure
 bootstrap
 iron:router
+mrt:accounts-ui-bootstrap-dropdown
+accounts-password

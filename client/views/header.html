@@ -8,12 +8,16 @@
             </a>
             <a class="brand"  href="{{pathFor route='postList'}}">Microscope</a>
             <div class="nav-collapse collapse">
+                <ul class="nav">
+                    {{#if currentUser}}
+                        <li><a href="{{pathFor route='postSubmit'}}">New</a></li>
+                    {{/if}}
+                </ul>
                 <ul class="nav pull-right">
                     <li>{{> loginButtons}}</li>
                 </ul>
             </div>
         </div>
-
     </header>
 
 </template>
